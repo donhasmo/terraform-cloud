@@ -11,6 +11,18 @@ resource "aws_db_subnet_group" "ACS-rds" {
   )
 }
 
+resource "aws_db_subnet_group" "ACS-rds" {
+  name       = "acs-rds"
+  subnet_ids = var.private_subnets
+
+  tags = merge(
+    var.tags,
+    {
+      Name = "ACS-database"
+    },
+  )
+}
+
 # create the RDS instance with the subnets group
 resource "aws_db_instance" "ACS-rds" {
   allocated_storage      = 20
