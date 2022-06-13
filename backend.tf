@@ -8,12 +8,12 @@
 #   }
 # }
 
-terraform {
-  backend "remote" {
-    organization = "Hasmo"
+# terraform {
+#   backend "remote" {
+#     organization = "Hasmo"
 
-    workspaces {
-      name = "terraform-cloud"
-    }
-  }
-}
+#     workspaces {
+#       name = "terraform-cloud"
+#     }
+#   }
+# }
