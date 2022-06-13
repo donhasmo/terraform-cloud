@@ -1,5 +1,5 @@
 # create DB subnet group from the private subnets
-resource "aws_db_subnet_group" "ACS-rds" {
+resource "aws_db_subnet_group" "ACS-rds1" {
   name       = "acs-rds"
   subnet_ids = var.private_subnets
 
@@ -11,7 +11,7 @@ resource "aws_db_subnet_group" "ACS-rds" {
   )
 }
 
-resource "aws_db_subnet_group" "ACS-rds" {
+resource "aws_db_subnet_group" "ACS-rds2" {
   name       = "acs-rds"
   subnet_ids = var.private_subnets
 
