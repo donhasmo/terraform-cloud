@@ -7,3 +7,13 @@
 #     encrypt        = true
 #   }
 # }
+
+terraform {
+  backend "remote" {
+    organization = "Hasmo"
+
+    workspaces {
+      name = "terraform-cloud"
+    }
+  }
+}

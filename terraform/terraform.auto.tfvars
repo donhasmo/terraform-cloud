@@ -1,4 +1,4 @@
-region = "us-east-1"
+region = "us-east-2"
 
 vpc_cidr = "172.16.0.0/16"
 
@@ -16,15 +16,17 @@ preferred_number_of_private_subnets = 4
 
 environment = "dev"
 
-ami-web = "ami-0b0af3577fe5e3532"
+ami = "ami-0c4f7023847b90238"
 
-ami-bastion = "ami-0b0af3577fe5e3532"
+# ami-web = "ami-0960b2296e6a893ce"
 
-ami-nginx = "ami-0b0af3577fe5e3532"
+# ami-bastion = "ami-0c3159367479e8fa0"
 
-ami-sonar = "ami-0b0af3577fe5e3532"
+# ami-nginx = "ami-0a6051941da05d12d"
 
-keypair = "Hasmo2"
+# ami-sonar = "ami-0370f5fae69bc7b2d"
+
+keypair = "new2"
 
 account_no = 846248358337
 
