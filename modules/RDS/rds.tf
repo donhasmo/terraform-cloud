@@ -25,5 +25,6 @@ resource "aws_db_instance" "ACS-rds" {
   db_subnet_group_name   = aws_db_subnet_group.ACS-rds.name
   skip_final_snapshot    = true
   vpc_security_group_ids = var.db-sg
-  multi_az               = "true"
+  multi_az               = "false"
+  availability_zone = [us-west-2b, us-west-2a]
 }
