@@ -45,6 +45,7 @@ module "VPC" {
   public_subnets                      = [for i in range(2, 5, 2) : cidrsubnet(var.vpc_cidr, 8, i)]
 }
 
+
 #Module for Application Load balancer, this will create Extenal Load balancer and internal load balancer
 module "ALB" {
   source             = "./modules/ALB"
