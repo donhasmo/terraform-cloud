@@ -26,5 +26,5 @@ resource "aws_db_instance" "ACS-rds" {
   skip_final_snapshot    = true
   vpc_security_group_ids = var.db-sg
   multi_az               = "false"
-  availability_zone = [us-west-2b, us-west-2a]
+  # availability_zone = [us-west-2b, us-west-2a]
 }
