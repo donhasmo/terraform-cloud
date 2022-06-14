@@ -29,7 +29,6 @@ resource "aws_autoscaling_attachment" "asg_attachment_wordpress" {
 }
 
 
-
 # ---- Autoscaling for tooling -----
 
 resource "aws_autoscaling_group" "tooling-asg" {
